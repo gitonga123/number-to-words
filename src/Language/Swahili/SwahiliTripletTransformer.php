@@ -1,7 +1,7 @@
 <?php
 namespace NumberToWords\Language\Swahili;
 use NumberToWords\Language\TripletTransformer;
-class SwahiliTripletTransformer extends TripletTransformer;
+class SwahiliTripletTransformer extends TripletTransformer
 {
     private $dictionary;
 

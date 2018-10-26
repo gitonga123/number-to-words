@@ -67,6 +67,7 @@ class NumberToWords
         'tk' => TurkmenNumberTransformer::class,
         'tr' => TurkishNumberTransformer::class,
         'ua' => UkrainianNumberTransformer::class,
+        'swa' => 
     ];
 
     private $currencyTransformers = [
