@@ -100,7 +100,7 @@ Swedish              | sv         | +      | -        |
 Turkish              | tr         | +      | -        |
 Turkmen              | tk         | +      | +        |
 Ukrainian            | ua         | +      | +        |
-
+Swahili              | swa        | +      | +        |
 ## Contributors
 
 Most of the transformers were ported from `pear/Numbers_Words` library. Some of them were slightly refactored. Some of them were created by other [contributors](https://github.com/kwn/number-to-words/graphs/contributors) who were helping me with the initial version of that library.
