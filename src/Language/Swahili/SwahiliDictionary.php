@@ -103,31 +103,58 @@ class SwahiliDictionary implements Dictionary
         'PHP' => [['peso'], ['centavo']]
     ];
 
+    /**
+     * @return string
+     */
+
     public function getZero()
     {
         return 'Sufuri';
     }
 
+    /**
+     * @return string
+     */
     public function getMinus()
     {
         return 'Kuondoa';
     }
 
+    /**
+     * @param int $unit
+     *
+     * @return string
+     */
     public function getCorrespondingUnit($unit)
     {
         return self::$units[$unit];
     }
 
+    /**
+     * @param int $teen
+     *
+     * @return string
+     */
     public function getCorrespondingTeen($teen)
     {
         return self::$teens[$teen];
     }
 
+    /**
+     * @param int $ten
+     *
+     * @return string
+     */
     public function getCorrespondingTen($ten)
     {
        return self::$tens[$ten];
     }
 
+    /**
+     * @param int $hundred
+     *
+     * @return string
+     */
     public function getCorrespondingHundred($hundred)
     {
         return self::$hundrends[$hundred];

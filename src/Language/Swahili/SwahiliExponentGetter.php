@@ -7,6 +7,9 @@ use NumberToWords\Language\ExponentGetter;
 
 class SwahiliExponentGetter implements ExponentGetter
 {
+    /**
+     * @var int $exponent
+     */
     private static $exponent = [
         '',
         'elfu',
@@ -32,6 +35,11 @@ class SwahiliExponentGetter implements ExponentGetter
         'vigintillion',
     ];
 
+    /**
+     * @param int $power
+     *
+     * @return string
+     */
     public function getExponent($power)
     {
         return self::$exponent[$power];

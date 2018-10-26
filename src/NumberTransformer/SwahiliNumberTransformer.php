@@ -9,6 +9,10 @@ use NumberToWords\Service\NumberToTripletsConverter;
 
 class SwahiliNumberTransformer implements NumberTransformer
 {
+    /**
+     * @inheritdoc
+     */
+
     public function toWords($number)
     {
         $dictionary = new SwahiliDictionary();

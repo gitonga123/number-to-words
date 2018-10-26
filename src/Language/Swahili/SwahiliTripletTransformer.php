@@ -1,14 +1,27 @@
 <?php
 namespace NumberToWords\Language\Swahili;
 use NumberToWords\Language\TripletTransformer;
-class SwahiliTripletTransformer extends TripletTransformer
+class SwahiliTripletTransformer implements TripletTransformer
 {
+    /**
+     * @var SwahiliDictionary
+     */
     private $dictionary;
+
+    /**
+     * @param SwahiliDictionary $dictionary
+     */
 
     public function __construct(SwahiliDictionary $dictionary)
     {
         $this->dictionary = $dictionary;
     }
+
+    /**
+     * @param int $number
+     *
+     * @return string
+     */
 
     public function transformToWords($number) {
         $units = $number % 10;
@@ -24,6 +37,14 @@ class SwahiliTripletTransformer extends TripletTransformer
         }
 
     }
+
+
+    /**
+     * @param int $tens
+     * @param int $units
+     *
+     * @return string
+     */
 
     private function getSubHundred($tens, $units)
     {
